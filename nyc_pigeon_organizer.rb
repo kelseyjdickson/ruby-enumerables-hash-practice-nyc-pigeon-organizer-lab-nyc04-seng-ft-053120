@@ -1,5 +1,6 @@
 require "pry"
 def nyc_pigeon_organizer(data)
+  
   final_results = data.each_with_objects({}) do |(key,value), final_array|
   value.each do |inner_key, names |
     names.each do |name|
@@ -9,7 +10,7 @@ def nyc_pigeon_organizer(data)
       if !final_array[name][key]
          !final_array[name][key] = []
   end
-  final_results[name][key].push[inner_key.to_s]
+    final_results[name][key].push[inner_key.to_s]
 
 
     end
